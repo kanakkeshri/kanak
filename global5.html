@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Example</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Navbar */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            background: #333;
+            padding: 10px;
+        }
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            padding: 10px;
+        }
+
+        /* Flexbox Container */
+        .container {
+            display: flex;
+            gap: 20px;
+            padding: 20px;
+        }
+
+        /* Sidebar */
+        .sidebar {
+            flex: 1; /* Takes less space */
+            background: #f4f4f4;
+            padding: 20px;
+        }
+
+        /* Main Content */
+        .main-content {
+            flex: 3; /* Takes more space */
+            background: #ddd;
+            padding: 20px;
+        }
+
+        /* Responsive Design */
+        @media (min-width: 900px) {
+            .container {
+                flex-direction: column;
+            }
+            p{
+                background-color: yellow;
+            }
+
+        }
+    </style>
+</head>
+<body>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum quidem vero itaque voluptas animi similique. Saepe consequuntur porro optio atque a animi, nihil eum expedita voluptates quae exercitationem deleniti repellat minus adipisci laborum nulla illum voluptatem totam aliquid sunt! Atque veritatis nulla fugiat, debitis reprehenderit culpa iste accusamus aliquid sint vero corrupti accusantium quas dolorum excepturi alias repellendus dolore, ad dignissimos animi tenetur architecto est numquam maxime! Quam reiciendis incidunt, esse voluptatum quidem dolorem velit quaerat quod fuga mollitia est provident corrupti beatae aspernatur, dicta exercitationem iure obcaecati! Architecto, maxime dicta. Deleniti consectetur voluptatem odio, quia accusantium amet dolorem animi.</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Distinctio dolorem libero deserunt cumque tempore, beatae obcaecati inventore voluptate omnis saepe, culpa soluta enim blanditiis voluptas sapiente nihil amet recusandae quo.
+
+    </p>
+
+
+    <div class="navbar">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+    </div>
+
+    <div class="container">
+        <div class="sidebar">Sidebar</div>
+        <div class="main-content">Main Content</div>
+    </div>
+
+</body>
+</html>
